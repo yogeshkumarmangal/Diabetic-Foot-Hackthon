@@ -19,7 +19,7 @@ from fpdf import FPDF
 from dash_extensions import Download
 import dash_bootstrap_components as dbc
 col=['Grade1','Grade2','Grade3']
-dbx = dropbox.Dropbox('5uSdWA0gd2UAAAAAAAAAAauPVaO_t_nlwRgP3YzwZ8-2HlxYFWRLUrmTAgk4F4b7')
+dbx = dropbox.Dropbox('Token')
 for entry in dbx.files_list_folder('/Diabetci Foot').entries:
             aa=entry.name
             if aa=='TestResult.csv':
